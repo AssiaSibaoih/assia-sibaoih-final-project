@@ -12311,6 +12311,7 @@ p {
 footer {
   width: 100%;
   background-color: rgb(53, 50, 45);
+  margin-top: 15vh;
 }
 footer h3, footer .h3 {
   text-align: center;
