@@ -4,7 +4,7 @@
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */ 
+ */
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -30,6 +30,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
+  --bs-assia: rgb(255, 160, 18);
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
@@ -38,6 +39,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-assia-rgb: 255, 160, 18;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -2967,6 +2969,23 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-assia {
+  --bs-btn-color: #000;
+  --bs-btn-bg: rgb(255, 160, 18);
+  --bs-btn-border-color: rgb(255, 160, 18);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffae36;
+  --bs-btn-hover-border-color: #ffaa2a;
+  --bs-btn-focus-shadow-rgb: 217, 136, 15;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffb341;
+  --bs-btn-active-border-color: #ffaa2a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: rgb(255, 160, 18);
+  --bs-btn-disabled-border-color: rgb(255, 160, 18);
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0d6efd;
@@ -3101,6 +3120,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
+}
+
+.btn-outline-assia {
+  --bs-btn-color: rgb(255, 160, 18);
+  --bs-btn-border-color: rgb(255, 160, 18);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(255, 160, 18);
+  --bs-btn-hover-border-color: rgb(255, 160, 18);
+  --bs-btn-focus-shadow-rgb: 255, 160, 18;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(255, 160, 18);
+  --bs-btn-active-border-color: rgb(255, 160, 18);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: rgb(255, 160, 18);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: rgb(255, 160, 18);
+  --bs-gradient: none;
 }
 
 .btn-outline-primary {
@@ -4808,6 +4844,13 @@ textarea.form-control-lg {
   padding: 1.25rem 1rem;
 }
 
+.alert-assia {
+  --bs-alert-color: var(--bs-assia-text-emphasis);
+  --bs-alert-bg: var(--bs-assia-bg-subtle);
+  --bs-alert-border-color: var(--bs-assia-border-subtle);
+  --bs-alert-link-color: var(--bs-assia-text-emphasis);
+}
+
 .alert-primary {
   --bs-alert-color: var(--bs-primary-text-emphasis);
   --bs-alert-bg: var(--bs-primary-bg-subtle);
@@ -5163,6 +5206,19 @@ textarea.form-control-lg {
 }
 .list-group-flush > .list-group-item:last-child {
   border-bottom-width: 0;
+}
+
+.list-group-item-assia {
+  --bs-list-group-color: var(--bs-assia-text-emphasis);
+  --bs-list-group-bg: var(--bs-assia-bg-subtle);
+  --bs-list-group-border-color: var(--bs-assia-border-subtle);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-assia-border-subtle);
+  --bs-list-group-action-active-color: var(--bs-emphasis-color);
+  --bs-list-group-action-active-bg: var(--bs-assia-border-subtle);
+  --bs-list-group-active-color: var(--bs-assia-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-assia-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-assia-text-emphasis);
 }
 
 .list-group-item-primary {
@@ -6747,6 +6803,11 @@ textarea.form-control-lg {
   content: "";
 }
 
+.text-bg-assia {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-assia-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-primary {
   color: #fff !important;
   background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -6785,6 +6846,15 @@ textarea.form-control-lg {
 .text-bg-dark {
   color: #fff !important;
   background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.link-assia {
+  color: RGBA(var(--bs-assia-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-assia-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-assia:hover, .link-assia:focus {
+  color: RGBA(255, 179, 65, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 179, 65, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -7258,6 +7328,10 @@ textarea.form-control-lg {
   box-shadow: none !important;
 }
 
+.focus-ring-assia {
+  --bs-focus-ring-color: rgba(var(--bs-assia-rgb), var(--bs-focus-ring-opacity));
+}
+
 .focus-ring-primary {
   --bs-focus-ring-color: rgba(var(--bs-primary-rgb), var(--bs-focus-ring-opacity));
 }
@@ -7408,6 +7482,11 @@ textarea.form-control-lg {
 
 .border-start-0 {
   border-left: 0 !important;
+}
+
+.border-assia {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-assia-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-primary {
@@ -8361,6 +8440,11 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
+.text-assia {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-assia-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -8563,6 +8647,11 @@ textarea.form-control-lg {
   text-underline-offset: 0.375em !important;
 }
 
+.link-underline-assia {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-assia-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline-primary {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-primary-rgb), var(--bs-link-underline-opacity)) !important;
@@ -8654,6 +8743,11 @@ textarea.form-control-lg {
 
 .link-underline-opacity-100-hover:hover {
   --bs-link-underline-opacity: 1;
+}
+
+.bg-assia {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-assia-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-primary {
@@ -11916,6 +12010,57 @@ span {
   position: absolute;
   top: 30%;
 }
+.carousel-caption .links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 5px;
+}
+.carousel-caption .links a {
+  color: white;
+  font-size: 15px;
+}
+.carousel-caption .links a:hover {
+  color: rgb(255, 160, 18);
+}
+.carousel-caption .links button {
+  padding: 6px 25px;
+  color: white;
+  background-color: rgb(255, 160, 18);
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+.carousel-caption h3, .carousel-caption .h3 {
+  padding-top: 5px;
+  padding-right: 5vw;
+  color: white;
+}
+
+.carousel-caption button {
+  border: 2px solid rgb(255, 160, 18);
+  border-radius: 25px;
+  padding: 6px 25px;
+  background-color: transparent;
+  color: white;
+}
+
+.hero-section p {
+  color: white;
+}
+
+span {
+  color: rgb(255, 160, 18);
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+}
 
 .First-section {
   display: flex;
@@ -12000,31 +12145,11 @@ p {
   gap: 2px;
 }
 
-.heading {
-  color: rgb(96, 90, 81);
-}
-.heading .spn-menu {
-  color: rgb(255, 160, 18);
-}
-
-.Menu {
-  padding-top: 10vh;
-  position: realative;
-}
-.Menu .Menu-btn {
-  position: absolute;
-  left: 36vw;
-}
-.Menu .Menu-btn a, .Menu button {
-  border: 2px solid rgb(255, 160, 18);
-  border-radius: 25px 25px;
-}
-.Menu .Menu-btn a:hover, .Menu button:hover {
-  background-color: rgb(255, 160, 18);
-  color: white;
-}
-
 .heading-menu {
+  color: rgb(96, 90, 81);
+  text-align: center;
+}
+.heading-menu .spn-menu {
   color: rgb(255, 160, 18);
 }
 
