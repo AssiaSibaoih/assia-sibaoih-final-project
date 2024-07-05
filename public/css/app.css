@@ -12242,8 +12242,8 @@ p {
 .container .btn {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: 25px;
+  justify-content: center;
 }
 .container button {
   padding: 6px 25px;
@@ -12251,7 +12251,8 @@ p {
   background-color: rgb(255, 160, 18);
   border: none;
   border-radius: 25px;
-  text-align: center;
+  padding-left: 8vw;
+  align-items: center;
 }
 .container form {
   padding-top: 35px;
